@@ -54,9 +54,6 @@ EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
-# Entrypoint script to run migrations and start the app
-COPY --chown=nextjs:nodejs docker-entrypoint.sh ./
-RUN chmod +x docker-entrypoint.sh
-
-CMD ["./docker-entrypoint.sh"]
+# Run migrations and start the app
+CMD ["sh", "-c", "npx prisma migrate deploy && node server.js"]
 
