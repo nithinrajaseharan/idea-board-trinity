@@ -1,0 +1,17 @@
+node_modules
+.next
+.git
+.gitignore
+.env
+.env.local
+.env.development
+.env.production
+README.md
+docker-compose.yml
+Dockerfile
+.dockerignore
+k8s
+*.md
+.vscode
+.idea
+

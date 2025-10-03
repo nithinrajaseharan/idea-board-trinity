@@ -1,0 +1,42 @@
+{
+  "name": "idea-board",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "prisma generate && next build --turbopack",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.16.3",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.22",
+    "next": "15.5.4",
+    "prisma": "^6.16.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "swr": "^2.3.6",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.19",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.5.0",
+    "globals": "^16.4.0",
+    "jiti": "^2.6.1",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "typescript-eslint": "^8.45.0"
+  }
+}
